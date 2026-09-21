@@ -1,0 +1,5 @@
+{
+  "data_root": "/path/to/your/cleaned-data",
+  "series_ids": ["PPIACO", "INDPRO", "TCU"],
+  "horizons": [10, 20, 50, 100]
+}

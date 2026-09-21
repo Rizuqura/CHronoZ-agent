@@ -1,0 +1,192 @@
+﻿{
+    "files":  [
+                  {
+                      "path":  "data/cleaned/AWHAETP.csv",
+                      "sha256":  "5e13c1384dcc2272a903fd01464b109170018146f7afe13ea93198b611b19db6",
+                      "bytes":  3947
+                  },
+                  {
+                      "path":  "data/cleaned/AWHMAN.csv",
+                      "sha256":  "d3a322ac9f4b42e5bd36c4117ced5105e802fa10b1c3e076d0dafb9fc5aa9442",
+                      "bytes":  16843
+                  },
+                  {
+                      "path":  "data/cleaned/BUSLOANS.csv",
+                      "sha256":  "9d14679f234a1ebd4e70ba1ded2058d603f124346c94fe25dbd17848348a476d",
+                      "bytes":  19023
+                  },
+                  {
+                      "path":  "data/cleaned/CES0500000003.csv",
+                      "sha256":  "201bb613a88d01db0e3fbc32d6b05c37c157374949579365938492cd936f10cf",
+                      "bytes":  4169
+                  },
+                  {
+                      "path":  "data/cleaned/CIVPART.csv",
+                      "sha256":  "123f1eede7f58a87a9848d607a58b5f3e76295ec738d3da71bc70d4715261f96",
+                      "bytes":  15099
+                  },
+                  {
+                      "path":  "data/cleaned/CPIAUCSL.csv",
+                      "sha256":  "d5fc9dbc3e150588c79182f78e6cb2745ea71651801e44c8ce3a27102780bab4",
+                      "bytes":  16476
+                  },
+                  {
+                      "path":  "data/cleaned/CPILFESL.csv",
+                      "sha256":  "cc30014eb52b0d8a29ae4be51c712ee4a16ead144209836c27794da46cedb531",
+                      "bytes":  14324
+                  },
+                  {
+                      "path":  "data/cleaned/DRBLACBS.csv",
+                      "sha256":  "f4f7a6624fc95b0be70c963f5cfba106bf3aea5f6cb70b19bd4e497d2e1a6002",
+                      "bytes":  2518
+                  },
+                  {
+                      "path":  "data/cleaned/DRSDCILM.csv",
+                      "sha256":  "e5e251b3b8aae6f80410d9d28ee78017447e794292c293380097dacba7afe13b",
+                      "bytes":  2270
+                  },
+                  {
+                      "path":  "data/cleaned/DRTSCILM.csv",
+                      "sha256":  "967ab7be5634815d82818abbebc17f9e2e037f474b8e33fe07c427dc68904c59",
+                      "bytes":  2350
+                  },
+                  {
+                      "path":  "data/cleaned/EXPGSC1.csv",
+                      "sha256":  "d7f43e06e276fa3a56883e3cc4ca671e0180e59e83c6d3ab971c4e69aa0314c4",
+                      "bytes":  6088
+                  },
+                  {
+                      "path":  "data/cleaned/FEDFUNDS.csv",
+                      "sha256":  "e6e911d32390317618ebdab00a3aba20f5d46846f54b2e10a38afb3307960c8b",
+                      "bytes":  13817
+                  },
+                  {
+                      "path":  "data/cleaned/HOUST.csv",
+                      "sha256":  "e9131f3bdc2083de5b7382c7fda5b135981b91828f4b268df9cfe7667692c988",
+                      "bytes":  12909
+                  },
+                  {
+                      "path":  "data/cleaned/ICSA.csv",
+                      "sha256":  "2d6b08b63c26ce5515751409912aa6cd951df9120d7e5a24c2121ce1bdcc20a6",
+                      "bytes":  56101
+                  },
+                  {
+                      "path":  "data/cleaned/IMPGSC1.csv",
+                      "sha256":  "f6a578d47031d0d33730e6d05d8e1945fd3a23a11c7d4665e32e2b254f50685c",
+                      "bytes":  6110
+                  },
+                  {
+                      "path":  "data/cleaned/INDPRO.csv",
+                      "sha256":  "13bd1cbe12db78324d32136b073f0d1b54ac2a393735e2cbd9c3dddfdbb781f9",
+                      "bytes":  24263
+                  },
+                  {
+                      "path":  "data/cleaned/IPMAN.csv",
+                      "sha256":  "5507ab71415d3b1438ac336889d43dec1ecfdcd173aaff052e8f889f3445a57e",
+                      "bytes":  12463
+                  },
+                  {
+                      "path":  "data/cleaned/JTSJOL.csv",
+                      "sha256":  "dca103be19018866f2ddddc282c760f7317b95daacf862db9993bb4076b6346e",
+                      "bytes":  4959
+                  },
+                  {
+                      "path":  "data/cleaned/M2SL.csv",
+                      "sha256":  "c7250785e15e8f31f1e1fc195ce77cba94b3103eb818367c160d4f642b898103",
+                      "bytes":  14577
+                  },
+                  {
+                      "path":  "data/cleaned/OPHNFB.csv",
+                      "sha256":  "32cb916f30425e7b608f606d4fcc88e0e8e7d121b20c6607d7933ff7e6720c0a",
+                      "bytes":  5746
+                  },
+                  {
+                      "path":  "data/cleaned/PAYEMS.csv",
+                      "sha256":  "35566d09f4d44f3b2f7f3d4a429ebed987dc33d8830e4cbd48e9ebeb8d16d445",
+                      "bytes":  18374
+                  },
+                  {
+                      "path":  "data/cleaned/PCEC96.csv",
+                      "sha256":  "dd970db5c76664700a7acce362b59b726c9b9764ed32c0d90e1a40815ce74d9a",
+                      "bytes":  4476
+                  },
+                  {
+                      "path":  "data/cleaned/PCEPI.csv",
+                      "sha256":  "35146b7fec9ce08dcfe1d016482fe52b1d3831c8fb79afd358c026a4080c67c8",
+                      "bytes":  14644
+                  },
+                  {
+                      "path":  "data/cleaned/PCEPILFE.csv",
+                      "sha256":  "cac1b254fa4e67d99b6b48884a72e338cb45f80b0157c67f95d656f331937dfe",
+                      "bytes":  14625
+                  },
+                  {
+                      "path":  "data/cleaned/PERMIT.csv",
+                      "sha256":  "3536e5d4ccc4976c43b5dd339429b9f60cb89012e6d20bebcde53b881e19b181",
+                      "bytes":  12684
+                  },
+                  {
+                      "path":  "data/cleaned/PPIACO.csv",
+                      "sha256":  "773abac12899c316cb334d286bfefbf2247ebea5b95caa28d271ea58855bcbdc",
+                      "bytes":  22472
+                  },
+                  {
+                      "path":  "data/cleaned/PPIFID.csv",
+                      "sha256":  "8d93403b4c2ea6efd12732d1152a945e9a19c0f7cca9bdf47996f44738c951e1",
+                      "bytes":  3561
+                  },
+                  {
+                      "path":  "data/cleaned/RPI.csv",
+                      "sha256":  "b618fbf9375e1347e895a69e5c00b0853abdd4789bdb9587e1123c93e36acd4d",
+                      "bytes":  16478
+                  },
+                  {
+                      "path":  "data/cleaned/RRSFS.csv",
+                      "sha256":  "1e612f5da3280f8cbe929a86e73543c646b99ee0a062a02feec45e818ec968df",
+                      "bytes":  8311
+                  },
+                  {
+                      "path":  "data/cleaned/series_metadata.csv",
+                      "sha256":  "91f16477f8ed00bde12782245f2068a92cd48302e02e2cd7926ae6f401d8aa6d",
+                      "bytes":  4744
+                  },
+                  {
+                      "path":  "data/cleaned/TCU.csv",
+                      "sha256":  "a0d2b27ef90cc5f9f4d8d118ce473c94dc71851d85b26fcdc0fd48f01126866c",
+                      "bytes":  13516
+                  },
+                  {
+                      "path":  "data/cleaned/TOTALSL.csv",
+                      "sha256":  "e8377cb3aa79889d7aa258e4648086f320d6307654f63003aea2568b8b4a3362",
+                      "bytes":  21015
+                  },
+                  {
+                      "path":  "data/cleaned/TOTRESNS.csv",
+                      "sha256":  "1c667469b0261afb2594a14d3eeaaad7842f918c6929daa0df4756e194415ca5",
+                      "bytes":  13404
+                  },
+                  {
+                      "path":  "data/cleaned/UNRATE.csv",
+                      "sha256":  "b131bd5595fc5984bf2ff453aad399616573fe586c9acac57aeb95a93ea4ab44",
+                      "bytes":  14171
+                  },
+                  {
+                      "path":  "data/cleaned/W875RX1.csv",
+                      "sha256":  "b2fb526d253c0d6e4615569f22ada36cc43093680cb95d479a04b243a6896e77",
+                      "bytes":  14928
+                  },
+                  {
+                      "path":  "data/cleaned/WALCL.csv",
+                      "sha256":  "2ce364aa1b0394d3caa99290902c7fd0a4319c794e543f791b33850287092513",
+                      "bytes":  23251
+                  },
+                  {
+                      "path":  "data/cleaned/WRESBAL.csv",
+                      "sha256":  "6ce438e5c203ff5b84a02b359195178b462909813aa4993b672641e30f7696ed",
+                      "bytes":  22751
+                  }
+              ],
+    "copied_at_utc":  "2026-09-21T06:53:25.2005283Z",
+    "file_count":  37,
+    "source":  "data/cleaned"
+}

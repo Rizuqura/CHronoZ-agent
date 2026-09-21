@@ -1,0 +1,416 @@
+status: RESEARCH SELECTION / DEVELOPMENT IMPLEMENTATION
+methodology_source: CURRENT_MODEL_NOTES.md, 2026-09-20
+ordinary_good_timing: Full snapshot is an exposed engineering default following PPIACO;
+  no implied held-out validation.
+series:
+  INDPRO:
+    name: Industrial Production Index
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  IPMAN:
+    name: 'Industrial Production: Manufacturing'
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Separate manufacturing-production research annotation retained; crisis tails
+      remain.
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  PCEC96:
+    name: Real Personal Consumption Expenditures
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: PRE_LATEST
+    calibration_end: null
+    warnings:
+    - Modified-z events are excluded from calibration only; all events remain scoreable;
+      latest observation is held out.
+    calibration_filter: MODIFIED_Z
+  W875RX1:
+    name: Real Personal Income Excluding Current Transfer Receipts
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  RPI:
+    name: Real Personal Income
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Transfer-related extreme movements remain in the unconditional historical reference.
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  RRSFS:
+    name: Advance Real Retail and Food Services Sales
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  HOUST:
+    name: Housing Starts
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  PERMIT:
+    name: Building Permits
+    category: growth_activity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  PAYEMS:
+    name: 'All Employees: Total Nonfarm Payrolls'
+    category: labor
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Log change retained; absolute jobs change is an unimplemented proposal; crisis
+      tails can dominate.
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  UNRATE:
+    name: Unemployment Rate
+    category: labor
+    frequency: monthly
+    transform: ARITHMETIC_DELTA
+    model_family: DISCRETE_PLUS_SHOCK
+    selection: PASS_ALTERNATIVE_MODEL
+    reference_timing: PRE_LATEST
+    calibration_end: null
+    warnings: []
+    level_unit: percent
+  ICSA:
+    name: Initial Claims
+    category: labor
+    frequency: weekly
+    transform: LOG_DELTA
+    model_family: ROBUST_DELTA
+    selection: PASS_ALTERNATIVE_MODEL
+    reference_timing: PRE_LATEST
+    calibration_end: null
+    warnings: []
+  AWHAETP:
+    name: 'Average Weekly Hours: Total Private'
+    category: labor
+    frequency: monthly
+    transform: ARITHMETIC_DELTA
+    model_family: DISCRETE_DELTA
+    selection: PASS_ALTERNATIVE_MODEL
+    reference_timing: PRE_LATEST
+    calibration_end: null
+    warnings: []
+  AWHMAN:
+    name: 'Average Weekly Hours: Manufacturing'
+    category: labor
+    frequency: monthly
+    transform: ARITHMETIC_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - GOOD selection retained despite discrete rounding and substantial zero changes.
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  JTSJOL:
+    name: 'Job Openings: Total Nonfarm'
+    category: labor
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  CIVPART:
+    name: Labor Force Participation Rate
+    category: labor
+    frequency: monthly
+    transform: ARITHMETIC_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+    level_unit: percent
+  CES0500000003:
+    name: 'Average Hourly Earnings: Total Private'
+    category: labor
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  CPIAUCSL:
+    name: 'Consumer Price Index: All Urban Consumers'
+    category: inflation
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  CPILFESL:
+    name: Core CPI
+    category: inflation
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  PCEPI:
+    name: PCE Price Index
+    category: inflation
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  PCEPILFE:
+    name: Core PCE Price Index
+    category: inflation
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  PPIFID:
+    name: 'Producer Price Index: Final Demand'
+    category: inflation
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  PPIACO:
+    name: 'Producer Price Index: All Commodities'
+    category: inflation
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Regime-sensitive historical distribution; tails retained; standard z is not
+      a Gaussian probability.
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  BUSLOANS:
+    name: Commercial and Industrial Loans
+    category: credit
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  TOTALSL:
+    name: Total Consumer Credit Owned and Securitized
+    category: credit
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  DRTSCILM:
+    name: 'SLOOS: Banks Tightening C&I Lending Standards'
+    category: credit
+    frequency: quarterly
+    transform: ARITHMETIC_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+    level_unit: percent
+  DRSDCILM:
+    name: 'SLOOS: Stronger Demand for C&I Loans'
+    category: credit
+    frequency: quarterly
+    transform: ARITHMETIC_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+    level_unit: percent
+  DRBLACBS:
+    name: Delinquency Rate on Business Loans
+    category: credit
+    frequency: quarterly
+    transform: ARITHMETIC_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+    level_unit: percent
+  FEDFUNDS:
+    name: Federal Funds Effective Rate
+    category: policy_liquidity
+    frequency: monthly
+    transform: ARITHMETIC_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Arithmetic changes are percentage points; policy steps and regimes limit unconditional
+      interpretation.
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+    level_unit: percent
+  TOTRESNS:
+    name: 'Reserves of Depository Institutions: Total'
+    category: policy_liquidity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STRUCTURAL_EPOCH_ROBUST_DELTA
+    selection: PASS_ALTERNATIVE_MODEL
+    reference_timing: PRE_LATEST
+    calibration_end: null
+    warnings: []
+  WRESBAL:
+    name: Reserve Balances with Federal Reserve Banks
+    category: policy_liquidity
+    frequency: weekly
+    transform: LOG_DELTA
+    model_family: REGIME_ROBUST_DELTA
+    selection: PASS_ALTERNATIVE_MODEL
+    reference_timing: PRE_LATEST
+    calibration_end: null
+    warnings: []
+  WALCL:
+    name: Federal Reserve Total Assets
+    category: policy_liquidity
+    frequency: weekly
+    transform: LOG_DELTA
+    model_family: REGIME_ROBUST_DELTA
+    selection: PASS_ALTERNATIVE_MODEL
+    reference_timing: PRE_LATEST
+    calibration_end: null
+    warnings: []
+  M2SL:
+    name: M2 Money Stock
+    category: policy_liquidity
+    frequency: monthly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Acceleration research annotation does not alter the log transform; pooled history
+      is regime-sensitive.
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  EXPGSC1:
+    name: Real Exports of Goods and Services
+    category: external_structural
+    frequency: quarterly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  IMPGSC1:
+    name: Real Imports of Goods and Services
+    category: external_structural
+    frequency: quarterly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  OPHNFB:
+    name: Nonfarm Business Sector Labor Productivity
+    category: external_structural
+    frequency: quarterly
+    transform: LOG_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+  TCU:
+    name: 'Capacity Utilization: Total Industry'
+    category: external_structural
+    frequency: monthly
+    transform: ARITHMETIC_DELTA
+    model_family: STANDARD_DELTA
+    selection: GOOD
+    reference_timing: FULL_SNAPSHOT
+    calibration_end: null
+    warnings:
+    - Full-snapshot reference includes the current observation; scores are retrospective.
+    level_unit: percent

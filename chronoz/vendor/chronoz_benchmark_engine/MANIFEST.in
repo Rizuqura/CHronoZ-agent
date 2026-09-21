@@ -1,0 +1,6 @@
+include VERSION requirements.txt INTEGRATION.md VALIDATION.md
+recursive-include config *.yaml *.json
+recursive-include schemas *.json
+recursive-include examples *.py *.json
+recursive-include tests *.py
+recursive-include scripts *.py

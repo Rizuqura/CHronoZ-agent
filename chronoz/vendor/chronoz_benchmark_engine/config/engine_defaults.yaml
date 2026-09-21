@@ -1,0 +1,24 @@
+# Current research / DEVELOPMENT / AUDIT DEFAULTS, not economic truth.
+status: DEVELOPMENT / AUDIT DEFAULT
+rolling_horizons: [10, 20, 50, 100]
+robust_modified_z_threshold: 3.5
+regime_window: 13
+regime_lower_percentile: 0.20
+regime_upper_percentile: 0.80
+minimum_group_observations: 30
+rarity_probability_thresholds:
+  common: 0.10
+  less_common: 0.03
+  rare: 0.01
+minimum_samples:
+  rolling_correlation_10: 8
+  rolling_correlation_20: 15
+  rolling_correlation_50: 40
+  rolling_correlation_100: 80
+# Engineering defaults: require full calendar windows for local/elevation scores;
+# descriptive n/mean/median/std/MAD remain visible when incomplete.
+rolling_min_fraction: 1.0
+# Pattern compares signed score differences; no economic interpretation.
+acceleration_tolerance: 0.0
+relationship_transform_policy: RESEARCH_PERCENT_OR_DIFFERENCE
+allow_same_frequency_nonmonthly_relationships: true

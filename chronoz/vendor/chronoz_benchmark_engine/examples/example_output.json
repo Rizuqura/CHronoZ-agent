@@ -1,0 +1,638 @@
+{
+  "as_of": "2026-09-20T17:02:16.672179+00:00",
+  "engine_version": "0.1.0",
+  "data_root": "<externally supplied cleaned-data directory>",
+  "requested_series": [
+    "PPIACO",
+    "INDPRO",
+    "TCU"
+  ],
+  "indicators": {
+    "PPIACO": {
+      "series_id": "PPIACO",
+      "name": "Producer Price Index: All Commodities",
+      "category": "inflation",
+      "frequency": "monthly",
+      "latest_date": "2026-08-01",
+      "raw_value": 287.928,
+      "transformed_value": 0.9586382475649913,
+      "model_family": "STANDARD_DELTA",
+      "historical": {
+        "score": 0.5675270597420153,
+        "score_type": "Z_SCORE",
+        "percentile": 82.61188554658841,
+        "center": 0.23253888453984162,
+        "dispersion": 1.2794092379581294,
+        "ranges": {
+          "P5": -1.5034267777476984,
+          "P10": -0.863057398187017,
+          "P25": -0.2427233557057651,
+          "P50": 0.15835316056440618,
+          "P75": 0.6892900564205551,
+          "P90": 1.486445652858279,
+          "P95": 2.1097992244075385
+        },
+        "model_specific": {
+          "calibration": {
+            "n": 1363,
+            "mean": 0.23253888453984162,
+            "median": 0.15835316056440618,
+            "std": 1.2794092379581294,
+            "MAD": 0.47531063669232765,
+            "center": 0.23253888453984162,
+            "dispersion": 1.2794092379581294,
+            "scale_method": "SAMPLE_STD"
+          },
+          "reference_timing": "FULL_SNAPSHOT",
+          "calibration_end": "2026-08-01",
+          "history_count": 1363,
+          "eligible_count": 1363,
+          "calibration_count": 1363,
+          "historical_scores_are_retrospective": true,
+          "state": "NORMAL_ABOVE"
+        }
+      },
+      "rolling": {
+        "10": {
+          "n": 10,
+          "mean": 0.9975832047323863,
+          "median": 0.9127038742928306,
+          "std": 1.38969809543794,
+          "MAD": 1.259163081337178,
+          "rolling_elevation": 0.5979668564950458,
+          "local_score": -0.028024041549198596,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2025-11-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "20": {
+          "n": 20,
+          "mean": 0.6382520976232087,
+          "median": 0.6024171929413402,
+          "std": 1.11740659282516,
+          "MAD": 0.7607406797488281,
+          "rolling_elevation": 0.31710980431160884,
+          "local_score": 0.28672298158877363,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2025-01-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "50": {
+          "n": 50,
+          "mean": 0.05404963738438617,
+          "median": 0.02075266636483164,
+          "std": 1.1311178753525617,
+          "MAD": 0.6855442483814311,
+          "rolling_elevation": -0.1395091123777682,
+          "local_score": 0.7997297451414169,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2022-07-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "100": {
+          "n": 100,
+          "mean": 0.36289420620896434,
+          "median": 0.20035431219698197,
+          "std": 1.2943914763625641,
+          "MAD": 0.8072456184635701,
+          "rolling_elevation": 0.10188711930606585,
+          "local_score": 0.4602502814914679,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2018-05-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        }
+      },
+      "acceleration": {
+        "10_vs_20": 0.28085705218343693,
+        "20_vs_50": 0.45661891668937704,
+        "50_vs_100": -0.24139623168383406,
+        "pattern": "MIXED"
+      },
+      "flags": {
+        "transform": "LOG_DELTA",
+        "transform_checks": {
+          "valid_deltas": 1363,
+          "gap_pairs": 0,
+          "nonpositive_pairs": 0,
+          "nonfinite_pairs": 0
+        },
+        "source_sha256": "773abac12899c316cb334d286bfefbf2247ebea5b95caa28d271ea58855bcbdc",
+        "outlier": null,
+        "tail": null,
+        "shock": null,
+        "all_history_retained": true
+      },
+      "warnings": [
+        "Regime-sensitive historical distribution; tails retained; standard z is not a Gaussian probability.",
+        "Full-snapshot reference includes the current observation; scores are retrospective."
+      ]
+    },
+    "INDPRO": {
+      "series_id": "INDPRO",
+      "name": "Industrial Production Index",
+      "category": "growth_activity",
+      "frequency": "monthly",
+      "latest_date": "2026-07-01",
+      "raw_value": 102.9939,
+      "transformed_value": 0.20128230676776937,
+      "model_family": "STANDARD_DELTA",
+      "historical": {
+        "score": -0.01853425142336006,
+        "score_type": "Z_SCORE",
+        "percentile": 47.36434108527132,
+        "center": 0.2364942112567049,
+        "dispersion": 1.8998287918202839,
+        "ranges": {
+          "P5": -2.4105353958822717,
+          "P10": -1.330371593190729,
+          "P25": -0.3389297791115409,
+          "P50": 0.2531630379350336,
+          "P75": 0.8071049970779565,
+          "P90": 1.8653414785862692,
+          "P95": 2.9190346880366755
+        },
+        "model_specific": {
+          "calibration": {
+            "n": 1290,
+            "mean": 0.2364942112567049,
+            "median": 0.2531630379350336,
+            "std": 1.8998287918202839,
+            "MAD": 0.5823410817362706,
+            "center": 0.2364942112567049,
+            "dispersion": 1.8998287918202839,
+            "scale_method": "SAMPLE_STD"
+          },
+          "reference_timing": "FULL_SNAPSHOT",
+          "calibration_end": "2026-07-01",
+          "history_count": 1290,
+          "eligible_count": 1290,
+          "calibration_count": 1290,
+          "historical_scores_are_retrospective": true,
+          "state": "CENTRAL"
+        }
+      },
+      "rolling": {
+        "10": {
+          "n": 10,
+          "mean": 0.1295716056749363,
+          "median": 0.09581258464104181,
+          "std": 0.4589372051810494,
+          "MAD": 0.3184994464335844,
+          "rolling_elevation": -0.05628012694729338,
+          "local_score": 0.15625384101196022,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2025-10-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "20": {
+          "n": 20,
+          "mean": 0.1829986183855592,
+          "median": 0.06458011288339449,
+          "std": 0.4661026701941285,
+          "MAD": 0.32794541355323226,
+          "rolling_elevation": -0.028158112510701522,
+          "local_score": 0.039226740268608944,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2024-12-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "50": {
+          "n": 50,
+          "mean": 0.03250541140258889,
+          "median": 0.010536449692200023,
+          "std": 0.5380076193372412,
+          "MAD": 0.313678057702127,
+          "rolling_elevation": -0.10737220150173012,
+          "local_score": 0.3137072585943908,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2022-06-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "100": {
+          "n": 100,
+          "mean": 0.007672529824165331,
+          "median": 0.05683324946632595,
+          "std": 1.8040911925616618,
+          "MAD": 0.39660725233527927,
+          "rolling_elevation": -0.12044331700715964,
+          "local_score": 0.10731706786323479,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2018-04-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        }
+      },
+      "acceleration": {
+        "10_vs_20": -0.02812201443659186,
+        "20_vs_50": 0.0792140889910286,
+        "50_vs_100": 0.013071115505429526,
+        "pattern": "SHORT_TERM_DECELERATION"
+      },
+      "flags": {
+        "transform": "LOG_DELTA",
+        "transform_checks": {
+          "valid_deltas": 1290,
+          "gap_pairs": 0,
+          "nonpositive_pairs": 0,
+          "nonfinite_pairs": 0
+        },
+        "source_sha256": "13bd1cbe12db78324d32136b073f0d1b54ac2a393735e2cbd9c3dddfdbb781f9",
+        "outlier": null,
+        "tail": null,
+        "shock": null,
+        "all_history_retained": true
+      },
+      "warnings": [
+        "Full-snapshot reference includes the current observation; scores are retrospective."
+      ]
+    },
+    "TCU": {
+      "series_id": "TCU",
+      "name": "Capacity Utilization: Total Industry",
+      "category": "external_structural",
+      "frequency": "monthly",
+      "latest_date": "2026-07-01",
+      "raw_value": 76.2878,
+      "transformed_value": 0.08490000000000464,
+      "model_family": "STANDARD_DELTA",
+      "historical": {
+        "score": 0.14381643787406156,
+        "score_type": "Z_SCORE",
+        "percentile": 55.04201680672269,
+        "center": -0.01835070028011203,
+        "dispersion": 0.7179339288776722,
+        "ranges": {
+          "P5": -0.8509299999999996,
+          "P10": -0.6215699999999942,
+          "P25": -0.3126000000000069,
+          "P50": 0.02179999999999893,
+          "P75": 0.32714999999999606,
+          "P90": 0.6304499999999977,
+          "P95": 0.8409499999999961
+        },
+        "model_specific": {
+          "calibration": {
+            "n": 714,
+            "mean": -0.01835070028011203,
+            "median": 0.02179999999999893,
+            "std": 0.7179339288776722,
+            "MAD": 0.3267500000000041,
+            "center": -0.01835070028011203,
+            "dispersion": 0.7179339288776722,
+            "scale_method": "SAMPLE_STD"
+          },
+          "reference_timing": "FULL_SNAPSHOT",
+          "calibration_end": "2026-07-01",
+          "history_count": 714,
+          "eligible_count": 714,
+          "calibration_count": 714,
+          "historical_scores_are_retrospective": true,
+          "state": "CENTRAL"
+        }
+      },
+      "rolling": {
+        "10": {
+          "n": 10,
+          "mean": 0.024170000000000868,
+          "median": 0.006100000000003547,
+          "std": 0.34930764234410605,
+          "MAD": 0.2406999999999968,
+          "rolling_elevation": 0.05922648111447307,
+          "local_score": 0.17385820588539574,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2025-10-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "20": {
+          "n": 20,
+          "mean": 0.05598500000000044,
+          "median": -0.0432000000000059,
+          "std": 0.3535447120908005,
+          "MAD": 0.24739999999998474,
+          "rolling_elevation": 0.10354114395501487,
+          "local_score": 0.08178597787251869,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2024-12-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "50": {
+          "n": 50,
+          "mean": -0.052691999999999836,
+          "median": -0.06605000000000416,
+          "std": 0.4108643580928144,
+          "MAD": 0.2461500000000001,
+          "rolling_elevation": -0.047833509935339996,
+          "local_score": 0.3348842441303278,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2022-06-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "100": {
+          "n": 100,
+          "mean": -0.022818999999999933,
+          "median": -0.004399999999996851,
+          "std": 1.2740597916368201,
+          "MAD": 0.32875000000000654,
+          "rolling_elevation": -0.006223831386368776,
+          "local_score": 0.08454783732058209,
+          "score_type": "Z_SCORE",
+          "complete_window": true,
+          "start_date": "2018-04-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        }
+      },
+      "acceleration": {
+        "10_vs_20": -0.04431466284054181,
+        "20_vs_50": 0.15137465389035487,
+        "50_vs_100": -0.04160967854897122,
+        "pattern": "MIXED"
+      },
+      "flags": {
+        "transform": "ARITHMETIC_DELTA",
+        "transform_checks": {
+          "valid_deltas": 714,
+          "gap_pairs": 0,
+          "nonpositive_pairs": 0,
+          "nonfinite_pairs": 0
+        },
+        "source_sha256": "a0d2b27ef90cc5f9f4d8d118ce473c94dc71851d85b26fcdc0fd48f01126866c",
+        "outlier": null,
+        "tail": null,
+        "shock": null,
+        "all_history_retained": true
+      },
+      "warnings": [
+        "Full-snapshot reference includes the current observation; scores are retrospective."
+      ]
+    }
+  },
+  "relationships": [
+    {
+      "series_a": "PPIACO",
+      "series_b": "INDPRO",
+      "historical": {
+        "pearson": 0.3333581475937503,
+        "spearman": 0.1953484311226166,
+        "overlap": 1290,
+        "overlap_start": "1919-02-01",
+        "overlap_end": "2026-07-01",
+        "redundancy_candidate": false,
+        "best_descriptive_lag": 0,
+        "lag_correlation": 0.3333581475937504,
+        "lag_overlap": 1290,
+        "lag_unit": "calendar_months",
+        "lag_definition": "corr(series_a[t], series_b[t+k])",
+        "transform_policy": "RESEARCH_PERCENT_OR_DIFFERENCE",
+        "snapshot_as_of": "2026-09-17T16:51:03.566146+00:00",
+        "source": "config/historical_relationships.json",
+        "research_rolling_60": {
+          "latest_end": "2026-08-01",
+          "pearson": 0.2340918534555499,
+          "overlap": 59,
+          "minimum": -0.2637459957513186,
+          "maximum": 0.7002852028199936
+        }
+      },
+      "rolling": {
+        "10": {
+          "pearson": 0.1024860569540995,
+          "spearman": -0.08333333333333334,
+          "n": 9,
+          "sample_size_label": "LOW",
+          "start_date": "2025-11-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "20": {
+          "pearson": 0.2242094637503044,
+          "spearman": 0.14385964912280702,
+          "n": 19,
+          "sample_size_label": "EXPLORATORY",
+          "start_date": "2025-01-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "50": {
+          "pearson": 0.24088838127080323,
+          "spearman": 0.17632653061224488,
+          "n": 49,
+          "sample_size_label": "MODERATE",
+          "start_date": "2022-07-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "100": {
+          "pearson": 0.3950822501560435,
+          "spearman": 0.27205936920222634,
+          "n": 99,
+          "sample_size_label": "STRONGER",
+          "start_date": "2018-05-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        }
+      },
+      "live_transforms": {
+        "series_a": "PERCENT_CHANGE",
+        "series_b": "PERCENT_CHANGE",
+        "frequency": "monthly"
+      },
+      "warnings": [
+        "Correlation != causality.",
+        "Lead-lag is descriptive timing association only; selected peaks are not predictive validation.",
+        "Redundancy != automatic deletion.",
+        "Historical monthly relationships use percentage changes / first differences, not benchmark log deltas.",
+        "Historical coefficients are a frozen research snapshot; histories and lag-specific samples differ.",
+        "Latest observation dates differ; windows end at the later date and missing positions remain missing.",
+        "Sample-size labels describe only sample-size reliability; they do not establish significance."
+      ]
+    },
+    {
+      "series_a": "PPIACO",
+      "series_b": "TCU",
+      "historical": {
+        "pearson": 0.1808445263300406,
+        "spearman": 0.1040837272352677,
+        "overlap": 714,
+        "overlap_start": "1967-02-01",
+        "overlap_end": "2026-07-01",
+        "redundancy_candidate": false,
+        "best_descriptive_lag": 1,
+        "lag_correlation": 0.1827690512562965,
+        "lag_overlap": 714,
+        "lag_unit": "calendar_months",
+        "lag_definition": "corr(series_a[t], series_b[t+k])",
+        "transform_policy": "RESEARCH_PERCENT_OR_DIFFERENCE",
+        "snapshot_as_of": "2026-09-17T16:51:03.566146+00:00",
+        "source": "config/historical_relationships.json",
+        "research_rolling_60": {
+          "latest_end": "2026-08-01",
+          "pearson": 0.2693630210956161,
+          "overlap": 59,
+          "minimum": -0.1867024015931889,
+          "maximum": 0.7087311090362598
+        }
+      },
+      "rolling": {
+        "10": {
+          "pearson": 0.11065805134252421,
+          "spearman": -0.08333333333333334,
+          "n": 9,
+          "sample_size_label": "LOW",
+          "start_date": "2025-11-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "20": {
+          "pearson": 0.2390500173462668,
+          "spearman": 0.1649122807017544,
+          "n": 19,
+          "sample_size_label": "EXPLORATORY",
+          "start_date": "2025-01-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "50": {
+          "pearson": 0.2460072681488863,
+          "spearman": 0.18755102040816324,
+          "n": 49,
+          "sample_size_label": "MODERATE",
+          "start_date": "2022-07-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        },
+        "100": {
+          "pearson": 0.4188233107214807,
+          "spearman": 0.3125664811379097,
+          "n": 99,
+          "sample_size_label": "STRONGER",
+          "start_date": "2018-05-01",
+          "end_date": "2026-08-01",
+          "warnings": []
+        }
+      },
+      "live_transforms": {
+        "series_a": "PERCENT_CHANGE",
+        "series_b": "ARITHMETIC_DELTA",
+        "frequency": "monthly"
+      },
+      "warnings": [
+        "Correlation != causality.",
+        "Lead-lag is descriptive timing association only; selected peaks are not predictive validation.",
+        "Redundancy != automatic deletion.",
+        "Historical monthly relationships use percentage changes / first differences, not benchmark log deltas.",
+        "Historical coefficients are a frozen research snapshot; histories and lag-specific samples differ.",
+        "Latest observation dates differ; windows end at the later date and missing positions remain missing.",
+        "Sample-size labels describe only sample-size reliability; they do not establish significance."
+      ]
+    },
+    {
+      "series_a": "INDPRO",
+      "series_b": "TCU",
+      "historical": {
+        "pearson": 0.9836908972962016,
+        "spearman": 0.9625467315908884,
+        "overlap": 714,
+        "overlap_start": "1967-02-01",
+        "overlap_end": "2026-07-01",
+        "redundancy_candidate": true,
+        "best_descriptive_lag": 0,
+        "lag_correlation": 0.9836908972962009,
+        "lag_overlap": 714,
+        "lag_unit": "calendar_months",
+        "lag_definition": "corr(series_a[t], series_b[t+k])",
+        "transform_policy": "RESEARCH_PERCENT_OR_DIFFERENCE",
+        "snapshot_as_of": "2026-09-17T16:51:03.566146+00:00",
+        "source": "config/historical_relationships.json",
+        "research_rolling_60": {
+          "latest_end": "2026-08-01",
+          "pearson": 0.9954246428892748,
+          "overlap": 59,
+          "minimum": 0.9356661483469508,
+          "maximum": 0.9992325473052516
+        }
+      },
+      "rolling": {
+        "10": {
+          "pearson": 0.99935194291753,
+          "spearman": 0.9878787878787878,
+          "n": 10,
+          "sample_size_label": "LOW",
+          "start_date": "2025-10-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "20": {
+          "pearson": 0.9993725487671417,
+          "spearman": 0.9984962406015038,
+          "n": 20,
+          "sample_size_label": "EXPLORATORY",
+          "start_date": "2024-12-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "50": {
+          "pearson": 0.999110293190262,
+          "spearman": 0.9982713085234093,
+          "n": 50,
+          "sample_size_label": "MODERATE",
+          "start_date": "2022-06-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        },
+        "100": {
+          "pearson": 0.9975440376663158,
+          "spearman": 0.9913351335133512,
+          "n": 100,
+          "sample_size_label": "STRONGER",
+          "start_date": "2018-04-01",
+          "end_date": "2026-07-01",
+          "warnings": []
+        }
+      },
+      "live_transforms": {
+        "series_a": "PERCENT_CHANGE",
+        "series_b": "ARITHMETIC_DELTA",
+        "frequency": "monthly"
+      },
+      "warnings": [
+        "Correlation != causality.",
+        "Lead-lag is descriptive timing association only; selected peaks are not predictive validation.",
+        "Redundancy != automatic deletion.",
+        "Historical monthly relationships use percentage changes / first differences, not benchmark log deltas.",
+        "Historical coefficients are a frozen research snapshot; histories and lag-specific samples differ.",
+        "Sample-size labels describe only sample-size reliability; they do not establish significance."
+      ]
+    }
+  ],
+  "warnings": [
+    "Research-use measurements; calibration choices are DEVELOPMENT / AUDIT DEFAULTS.",
+    "as_of is packet generation time, not a release or vintage cutoff; latest_date is an observation date.",
+    "Historical relationship context is a frozen research snapshot and is not refitted to the supplied data root.",
+    "PPIACO: Regime-sensitive historical distribution; tails retained; standard z is not a Gaussian probability.",
+    "PPIACO: Full-snapshot reference includes the current observation; scores are retrospective.",
+    "INDPRO: Full-snapshot reference includes the current observation; scores are retrospective.",
+    "TCU: Full-snapshot reference includes the current observation; scores are retrospective."
+  ]
+}

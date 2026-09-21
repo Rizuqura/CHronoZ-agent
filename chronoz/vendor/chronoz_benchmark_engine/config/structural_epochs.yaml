@@ -1,0 +1,6 @@
+status: DEVELOPMENT / AUDIT DEFAULT
+# The audit tested both two and three epochs. Three is the V0 engineering choice.
+TOTRESNS:
+  boundaries: ['2008-01-01', '2020-01-01']
+  labels: [PRE_2008, 2008_TO_2019, 2020_PLUS]
+  assignment: ENDING_DATE

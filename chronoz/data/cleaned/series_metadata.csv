@@ -1,0 +1,37 @@
+series_id,name,category,expected_frequency,inferred_frequency,source,first_date,last_date,valid_observations,missing_pct,clean_file
+INDPRO,Industrial Production Index,growth_activity,monthly,monthly,FRED,1919-01-01,2026-07-01,1291,0.0,data\cleaned\INDPRO.csv
+IPMAN,Industrial Production: Manufacturing,growth_activity,monthly,monthly,FRED,1972-01-01,2026-07-01,655,0.0,data\cleaned\IPMAN.csv
+PCEC96,Real Personal Consumption Expenditures,growth_activity,monthly,monthly,FRED,2007-01-01,2026-07-01,235,0.0,data\cleaned\PCEC96.csv
+W875RX1,Real Personal Income Excluding Current Transfer Receipts,growth_activity,monthly,monthly,FRED,1959-01-01,2026-07-01,811,0.0,data\cleaned\W875RX1.csv
+RPI,Real Personal Income,growth_activity,monthly,monthly,FRED,1959-01-01,2026-07-01,811,0.0,data\cleaned\RPI.csv
+RRSFS,Advance Real Retail and Food Services Sales,growth_activity,monthly,monthly,FRED,1992-01-01,2026-08-01,415,0.0,data\cleaned\RRSFS.csv
+HOUST,Housing Starts,growth_activity,monthly,monthly,FRED,1959-01-01,2026-08-01,812,0.0,data\cleaned\HOUST.csv
+PERMIT,Building Permits,growth_activity,monthly,monthly,FRED,1960-01-01,2026-08-01,800,0.0,data\cleaned\PERMIT.csv
+PAYEMS,All Employees: Total Nonfarm Payrolls,labor,monthly,monthly,FRED,1939-01-01,2026-08-01,1052,0.0,data\cleaned\PAYEMS.csv
+UNRATE,Unemployment Rate,labor,monthly,monthly,FRED,1948-01-01,2026-08-01,943,0.0,data\cleaned\UNRATE.csv
+ICSA,Initial Claims,labor,weekly,weekly,FRED,1967-01-07,2026-09-12,3115,0.0,data\cleaned\ICSA.csv
+AWHAETP,Average Weekly Hours: Total Private,labor,monthly,monthly,FRED,2006-03-01,2026-08-01,246,0.0,data\cleaned\AWHAETP.csv
+AWHMAN,Average Weekly Hours: Manufacturing,labor,monthly,monthly,FRED,1939-01-01,2026-08-01,1052,0.0,data\cleaned\AWHMAN.csv
+JTSJOL,Job Openings: Total Nonfarm,labor,monthly,monthly,FRED,2000-12-01,2026-07-01,308,0.0,data\cleaned\JTSJOL.csv
+CIVPART,Labor Force Participation Rate,labor,monthly,monthly,FRED,1948-01-01,2026-08-01,943,0.0,data\cleaned\CIVPART.csv
+CES0500000003,Average Hourly Earnings: Total Private,labor,monthly,monthly,FRED,2006-03-01,2026-08-01,246,0.0,data\cleaned\CES0500000003.csv
+CPIAUCSL,Consumer Price Index: All Urban Consumers,inflation,monthly,monthly,FRED,1947-01-01,2026-08-01,955,0.0,data\cleaned\CPIAUCSL.csv
+CPILFESL,Core CPI,inflation,monthly,monthly,FRED,1957-01-01,2026-08-01,835,0.0,data\cleaned\CPILFESL.csv
+PCEPI,PCE Price Index,inflation,monthly,monthly,FRED,1959-01-01,2026-07-01,811,0.0,data\cleaned\PCEPI.csv
+PCEPILFE,Core PCE Price Index,inflation,monthly,monthly,FRED,1959-01-01,2026-07-01,811,0.0,data\cleaned\PCEPILFE.csv
+PPIFID,Producer Price Index: Final Demand,inflation,monthly,monthly,FRED,2009-11-01,2026-08-01,202,0.0,data\cleaned\PPIFID.csv
+PPIACO,Producer Price Index: All Commodities,inflation,monthly,monthly,FRED,1913-01-01,2026-08-01,1364,0.0,data\cleaned\PPIACO.csv
+BUSLOANS,Commercial and Industrial Loans,credit,monthly,monthly,FRED,1947-01-01,2026-08-01,956,0.0,data\cleaned\BUSLOANS.csv
+TOTALSL,Total Consumer Credit Owned and Securitized,credit,monthly,monthly,FRED,1943-01-01,2026-07-01,1003,0.0,data\cleaned\TOTALSL.csv
+DRTSCILM,SLOOS: Banks Tightening C&I Lending Standards,credit,quarterly,quarterly,FRED,1990-04-01,2026-07-01,146,0.0,data\cleaned\DRTSCILM.csv
+DRSDCILM,SLOOS: Stronger Demand for C&I Loans,credit,quarterly,quarterly,FRED,1991-10-01,2026-07-01,140,0.0,data\cleaned\DRSDCILM.csv
+DRBLACBS,Delinquency Rate on Business Loans,credit,quarterly,quarterly,FRED,1987-01-01,2026-04-01,158,0.0,data\cleaned\DRBLACBS.csv
+FEDFUNDS,Federal Funds Effective Rate,policy_liquidity,monthly,monthly,FRED,1954-07-01,2026-08-01,866,0.0,data\cleaned\FEDFUNDS.csv
+TOTRESNS,Reserves of Depository Institutions: Total,policy_liquidity,monthly,monthly,FRED,1959-01-01,2026-07-01,811,0.0,data\cleaned\TOTRESNS.csv
+WRESBAL,Reserve Balances with Federal Reserve Banks,policy_liquidity,weekly,weekly,FRED,2002-12-18,2026-09-09,1239,0.0,data\cleaned\WRESBAL.csv
+WALCL,Federal Reserve Total Assets,policy_liquidity,weekly,weekly,FRED,2002-12-18,2026-09-09,1239,0.0,data\cleaned\WALCL.csv
+M2SL,M2 Money Stock,policy_liquidity,monthly,monthly,FRED,1959-01-01,2026-07-01,811,0.0,data\cleaned\M2SL.csv
+EXPGSC1,Real Exports of Goods and Services,external_structural,quarterly,quarterly,FRED,1947-01-01,2026-04-01,318,0.0,data\cleaned\EXPGSC1.csv
+IMPGSC1,Real Imports of Goods and Services,external_structural,quarterly,quarterly,FRED,1947-01-01,2026-04-01,318,0.0,data\cleaned\IMPGSC1.csv
+OPHNFB,Nonfarm Business Sector Labor Productivity,external_structural,quarterly,quarterly,FRED,1947-01-01,2026-04-01,318,0.0,data\cleaned\OPHNFB.csv
+TCU,Capacity Utilization: Total Industry,external_structural,monthly,monthly,FRED,1967-01-01,2026-07-01,715,0.0,data\cleaned\TCU.csv
